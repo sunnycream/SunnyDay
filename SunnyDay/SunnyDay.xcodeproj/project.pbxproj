@@ -8,20 +8,54 @@
 
 /* Begin PBXBuildFile section */
 		84E0746C2272A082007D4D98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0746B2272A082007D4D98 /* AppDelegate.swift */; };
-		84E0746E2272A082007D4D98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0746D2272A082007D4D98 /* ViewController.swift */; };
 		84E074712272A082007D4D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E0746F2272A082007D4D98 /* Main.storyboard */; };
 		84E074732272A083007D4D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E074722272A083007D4D98 /* Assets.xcassets */; };
 		84E074762272A083007D4D98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E074742272A083007D4D98 /* LaunchScreen.storyboard */; };
+		84E0747E2272A3E7007D4D98 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0747D2272A3E7007D4D98 /* BaseTabBarViewController.swift */; };
+		84E074802272B25E007D4D98 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0747F2272B25E007D4D98 /* BaseNavigationController.swift */; };
+		84E074822272E0AF007D4D98 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E074812272E0AF007D4D98 /* DayViewController.swift */; };
+		84E074842272E0C6007D4D98 /* NightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E074832272E0C6007D4D98 /* NightViewController.swift */; };
+		84E074862272E0D4007D4D98 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E074852272E0D4007D4D98 /* MeViewController.swift */; };
+		84E074952272E68E007D4D98 /* tab_bar_night_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E074892272E68E007D4D98 /* tab_bar_night_selected@2x.png */; };
+		84E074962272E68E007D4D98 /* tab_bar_night_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E0748A2272E68E007D4D98 /* tab_bar_night_selected@3x.png */; };
+		84E074972272E68E007D4D98 /* tab_bar_night_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E0748B2272E68E007D4D98 /* tab_bar_night_normal@2x.png */; };
+		84E074982272E68E007D4D98 /* tab_bar_night_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E0748C2272E68E007D4D98 /* tab_bar_night_normal@3x.png */; };
+		84E074992272E68E007D4D98 /* tab_bar_me_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E0748D2272E68E007D4D98 /* tab_bar_me_normal@3x.png */; };
+		84E0749A2272E68E007D4D98 /* tab_bar_me_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E0748E2272E68E007D4D98 /* tab_bar_me_normal@2x.png */; };
+		84E0749B2272E68E007D4D98 /* tab_bar_me_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E0748F2272E68E007D4D98 /* tab_bar_me_selected@2x.png */; };
+		84E0749C2272E68E007D4D98 /* tab_bar_day_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E074902272E68E007D4D98 /* tab_bar_day_selected@3x.png */; };
+		84E0749D2272E68E007D4D98 /* tab_bar_day_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E074912272E68E007D4D98 /* tab_bar_day_normal@2x.png */; };
+		84E0749E2272E68E007D4D98 /* tab_bar_day_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E074922272E68E007D4D98 /* tab_bar_day_normal@3x.png */; };
+		84E0749F2272E68E007D4D98 /* tab_bar_day_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E074932272E68E007D4D98 /* tab_bar_day_selected@2x.png */; };
+		84E074A02272E68E007D4D98 /* tab_bar_me_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E074942272E68E007D4D98 /* tab_bar_me_selected@3x.png */; };
+		84E074A52272EE53007D4D98 /* Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E074A42272EE53007D4D98 /* Prefix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84E074682272A082007D4D98 /* SunnyDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnyDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E0746B2272A082007D4D98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84E0746D2272A082007D4D98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84E074702272A082007D4D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84E074722272A083007D4D98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84E074752272A083007D4D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84E074772272A083007D4D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E0747D2272A3E7007D4D98 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		84E0747F2272B25E007D4D98 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		84E074812272E0AF007D4D98 /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
+		84E074832272E0C6007D4D98 /* NightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightViewController.swift; sourceTree = "<group>"; };
+		84E074852272E0D4007D4D98 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		84E074892272E68E007D4D98 /* tab_bar_night_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_night_selected@2x.png"; sourceTree = "<group>"; };
+		84E0748A2272E68E007D4D98 /* tab_bar_night_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_night_selected@3x.png"; sourceTree = "<group>"; };
+		84E0748B2272E68E007D4D98 /* tab_bar_night_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_night_normal@2x.png"; sourceTree = "<group>"; };
+		84E0748C2272E68E007D4D98 /* tab_bar_night_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_night_normal@3x.png"; sourceTree = "<group>"; };
+		84E0748D2272E68E007D4D98 /* tab_bar_me_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_me_normal@3x.png"; sourceTree = "<group>"; };
+		84E0748E2272E68E007D4D98 /* tab_bar_me_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_me_normal@2x.png"; sourceTree = "<group>"; };
+		84E0748F2272E68E007D4D98 /* tab_bar_me_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_me_selected@2x.png"; sourceTree = "<group>"; };
+		84E074902272E68E007D4D98 /* tab_bar_day_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_day_selected@3x.png"; sourceTree = "<group>"; };
+		84E074912272E68E007D4D98 /* tab_bar_day_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_day_normal@2x.png"; sourceTree = "<group>"; };
+		84E074922272E68E007D4D98 /* tab_bar_day_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_day_normal@3x.png"; sourceTree = "<group>"; };
+		84E074932272E68E007D4D98 /* tab_bar_day_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_day_selected@2x.png"; sourceTree = "<group>"; };
+		84E074942272E68E007D4D98 /* tab_bar_me_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_me_selected@3x.png"; sourceTree = "<group>"; };
+		84E074A42272EE53007D4D98 /* Prefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefix.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +89,46 @@
 			isa = PBXGroup;
 			children = (
 				84E0746B2272A082007D4D98 /* AppDelegate.swift */,
-				84E0746D2272A082007D4D98 /* ViewController.swift */,
+				84E0747D2272A3E7007D4D98 /* BaseTabBarViewController.swift */,
+				84E0747F2272B25E007D4D98 /* BaseNavigationController.swift */,
+				84E074812272E0AF007D4D98 /* DayViewController.swift */,
+				84E074832272E0C6007D4D98 /* NightViewController.swift */,
+				84E074852272E0D4007D4D98 /* MeViewController.swift */,
+				84E074A42272EE53007D4D98 /* Prefix.swift */,
+				84E074872272E649007D4D98 /* Resource */,
 				84E0746F2272A082007D4D98 /* Main.storyboard */,
 				84E074722272A083007D4D98 /* Assets.xcassets */,
 				84E074742272A083007D4D98 /* LaunchScreen.storyboard */,
 				84E074772272A083007D4D98 /* Info.plist */,
 			);
 			path = SunnyDay;
+			sourceTree = "<group>";
+		};
+		84E074872272E649007D4D98 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				84E074882272E68E007D4D98 /* tabbar */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		84E074882272E68E007D4D98 /* tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				84E074892272E68E007D4D98 /* tab_bar_night_selected@2x.png */,
+				84E0748A2272E68E007D4D98 /* tab_bar_night_selected@3x.png */,
+				84E0748B2272E68E007D4D98 /* tab_bar_night_normal@2x.png */,
+				84E0748C2272E68E007D4D98 /* tab_bar_night_normal@3x.png */,
+				84E0748D2272E68E007D4D98 /* tab_bar_me_normal@3x.png */,
+				84E0748E2272E68E007D4D98 /* tab_bar_me_normal@2x.png */,
+				84E0748F2272E68E007D4D98 /* tab_bar_me_selected@2x.png */,
+				84E074902272E68E007D4D98 /* tab_bar_day_selected@3x.png */,
+				84E074912272E68E007D4D98 /* tab_bar_day_normal@2x.png */,
+				84E074922272E68E007D4D98 /* tab_bar_day_normal@3x.png */,
+				84E074932272E68E007D4D98 /* tab_bar_day_selected@2x.png */,
+				84E074942272E68E007D4D98 /* tab_bar_me_selected@3x.png */,
+			);
+			path = tabbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +190,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E074762272A083007D4D98 /* LaunchScreen.storyboard in Resources */,
+				84E0749A2272E68E007D4D98 /* tab_bar_me_normal@2x.png in Resources */,
+				84E0749C2272E68E007D4D98 /* tab_bar_day_selected@3x.png in Resources */,
 				84E074732272A083007D4D98 /* Assets.xcassets in Resources */,
+				84E0749F2272E68E007D4D98 /* tab_bar_day_selected@2x.png in Resources */,
+				84E074A02272E68E007D4D98 /* tab_bar_me_selected@3x.png in Resources */,
+				84E074992272E68E007D4D98 /* tab_bar_me_normal@3x.png in Resources */,
+				84E074972272E68E007D4D98 /* tab_bar_night_normal@2x.png in Resources */,
+				84E0749D2272E68E007D4D98 /* tab_bar_day_normal@2x.png in Resources */,
+				84E074982272E68E007D4D98 /* tab_bar_night_normal@3x.png in Resources */,
+				84E074952272E68E007D4D98 /* tab_bar_night_selected@2x.png in Resources */,
+				84E0749E2272E68E007D4D98 /* tab_bar_day_normal@3x.png in Resources */,
 				84E074712272A082007D4D98 /* Main.storyboard in Resources */,
+				84E074962272E68E007D4D98 /* tab_bar_night_selected@3x.png in Resources */,
+				84E0749B2272E68E007D4D98 /* tab_bar_me_selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +214,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84E0746E2272A082007D4D98 /* ViewController.swift in Sources */,
+				84E074802272B25E007D4D98 /* BaseNavigationController.swift in Sources */,
+				84E074862272E0D4007D4D98 /* MeViewController.swift in Sources */,
+				84E074822272E0AF007D4D98 /* DayViewController.swift in Sources */,
 				84E0746C2272A082007D4D98 /* AppDelegate.swift in Sources */,
+				84E074A52272EE53007D4D98 /* Prefix.swift in Sources */,
+				84E0747E2272A3E7007D4D98 /* BaseTabBarViewController.swift in Sources */,
+				84E074842272E0C6007D4D98 /* NightViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +367,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = SunnyDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +386,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = SunnyDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
