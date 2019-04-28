@@ -7,8 +7,15 @@
 //
 
 import Foundation
-import UIKit
 
+import MBProgressHUD
+
+/** 屏幕宽度 */
+let kScreenWidth = UIScreen.main.bounds.width
+/** 幕高度 */
+let kScreenHeight = UIScreen.main.bounds.height
+/** 导航栏字体大小 */
 let kNavgationBarTextSize = 18
+/** 标签栏字体大小 */
 let kTabBarTextSize = 12
 
