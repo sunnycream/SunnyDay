@@ -8,14 +8,67 @@
 
 import UIKit
 
-class MeViewController: UIViewController {
+let cellID = "cellID"
+class MeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    lazy var tableView = UITableView(frame: view.bounds, style: .plain)
+    lazy var textArray: NSMutableArray = NSMutableArray()
+    lazy var imageArray: NSMutableArray = NSMutableArray()
+    lazy var headerView: UIView = UIView(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 100))
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        tableView.tableHeaderView = headerView
+        tableView.tableFooterView = UIView()//去掉多余分割线
+        headerView.backgroundColor = UIColor.black
+
+        view.addSubview(tableView)
+
+        textArray.addObjects(from: ["统计", "账号", "设置"])
+        imageArray.addObjects(from: ["me_statistical", "me_account", "me_setting"])
+    }
+
+    // MARK: - UITableViewDataSource
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return textArray.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
+
+        cell.imageView?.image = UIImage(named: imageArray.object(at: indexPath.row) as! String)
+        cell.textLabel?.text = textArray.object(at: indexPath.row) as? String
+
+        return cell
+    }
+
+    // MARK: - UITableViewDelegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("---------------点击了:\(indexPath.row)")
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = UIView()
+        header.backgroundColor = UIColor.red
+        return header
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
+    }
+
 
     /*
     // MARK: - Navigation
