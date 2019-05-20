@@ -8,8 +8,9 @@
 
 import UIKit
 
-let cellID = "cellID"
 class MeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    static let cellID = "cellID"
 
     lazy var tableView = UITableView(frame: view.bounds, style: .plain)
     lazy var textArray: NSMutableArray = NSMutableArray()
@@ -21,7 +22,7 @@ class MeViewController: UIViewController, UITableViewDataSource, UITableViewDele
 
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: MeViewController.cellID)
         tableView.tableHeaderView = headerView
         tableView.tableFooterView = UIView()//去掉多余分割线
         headerView.backgroundColor = UIColor.black
@@ -42,8 +43,7 @@ class MeViewController: UIViewController, UITableViewDataSource, UITableViewDele
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: MeViewController.cellID, for: indexPath)
         cell.imageView?.image = UIImage(named: imageArray.object(at: indexPath.row) as! String)
         cell.textLabel?.text = textArray.object(at: indexPath.row) as? String
 

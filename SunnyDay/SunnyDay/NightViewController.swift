@@ -8,23 +8,28 @@
 
 import UIKit
 
-let collectionViewCellID = "collectionViewCellID"
-class NightViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class NightViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
-    lazy var layout = UICollectionViewFlowLayout()
+    static let cellID = "cellID"
+
     lazy var collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
+    lazy var layout = UICollectionViewFlowLayout()
     lazy var dataArray: NSMutableArray = NSMutableArray()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //设置代理
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: collectionViewCellID)
+        //注册
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: NightViewController.cellID)
+        //背景色
         collectionView.backgroundColor = UIColor.white
-
+        //添加view
         view.addSubview(collectionView)
 
+        //布局，默认vertical
         layout.scrollDirection = UICollectionView.ScrollDirection.vertical
     }
 
@@ -34,12 +39,12 @@ class NightViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 100
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionViewCellID, for: indexPath)
-//        cell.backgroundColor = UIColor.red
+        //复用cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NightViewController.cellID, for: indexPath)
         cell.backgroundColor = UIColor.init(red: CGFloat(arc4random()%255)/255.0, green: CGFloat(arc4random()%255)/255.0, blue: CGFloat(arc4random()%255)/255.0, alpha: 1)
 
         return cell
@@ -47,8 +52,21 @@ class NightViewController: UIViewController, UICollectionViewDataSource, UIColle
 
     // MARK: - UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("YEAH~")
+        print("YEAH~ \(indexPath.row)")
     }
+
+    // MARK: - UICollectionViewDelegateFlowLayout
+    //cell大小
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = (kScreenWidth - 5 * 20) / 4
+        return  CGSize(width: width, height: width)
+    }
+
+    //上下左右间距
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    }
+
 
     /*
     // MARK: - Navigation
