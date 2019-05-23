@@ -13,7 +13,7 @@ import SnapKit
 
 /** 屏幕宽度 */
 let kScreenWidth = UIScreen.main.bounds.width
-/** 幕高度 */
+/** 屏幕高度 */
 let kScreenHeight = UIScreen.main.bounds.height
 /** 导航栏字体大小 */
 let kNavgationBarTextSize = 18

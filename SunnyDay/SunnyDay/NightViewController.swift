@@ -9,28 +9,31 @@
 import UIKit
 
 class NightViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    private let cellID = "cellID"
 
-    static let cellID = "cellID"
+    private lazy var collectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: self.layout)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.backgroundColor = UIColor.white
+        view.addSubview(collectionView)
 
-    lazy var collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
-    lazy var layout = UICollectionViewFlowLayout()
-    lazy var dataArray: NSMutableArray = NSMutableArray()
+        return collectionView
+    }()
+
+    private lazy var layout: UICollectionViewFlowLayout  = {
+        let layout = UICollectionViewFlowLayout()
+         //布局，默认vertical
+        layout.scrollDirection = UICollectionView.ScrollDirection.vertical
+
+        return layout
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //设置代理
-        collectionView.dataSource = self
-        collectionView.delegate = self
         //注册
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: NightViewController.cellID)
-        //背景色
-        collectionView.backgroundColor = UIColor.white
-        //添加view
-        view.addSubview(collectionView)
-
-        //布局，默认vertical
-        layout.scrollDirection = UICollectionView.ScrollDirection.vertical
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellID)
     }
 
     // MARK: - UICollectionViewDataSource
@@ -44,7 +47,7 @@ class NightViewController: UIViewController, UICollectionViewDataSource, UIColle
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         //复用cell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NightViewController.cellID, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)
         cell.backgroundColor = UIColor.init(red: CGFloat(arc4random()%255)/255.0, green: CGFloat(arc4random()%255)/255.0, blue: CGFloat(arc4random()%255)/255.0, alpha: 1)
 
         return cell
