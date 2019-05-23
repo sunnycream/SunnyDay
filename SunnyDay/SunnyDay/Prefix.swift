@@ -9,6 +9,7 @@
 import Foundation
 
 import MBProgressHUD
+import SnapKit
 
 /** 屏幕宽度 */
 let kScreenWidth = UIScreen.main.bounds.width
