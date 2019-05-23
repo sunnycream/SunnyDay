@@ -34,6 +34,7 @@
 		84E0749F2272E68E007D4D98 /* tab_bar_day_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E074932272E68E007D4D98 /* tab_bar_day_selected@2x.png */; };
 		84E074A02272E68E007D4D98 /* tab_bar_me_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E074942272E68E007D4D98 /* tab_bar_me_selected@3x.png */; };
 		84E074A52272EE53007D4D98 /* Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E074A42272EE53007D4D98 /* Prefix.swift */; };
+		84E4D7462296964A0016F241 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4D7452296964A0016F241 /* SettingViewController.swift */; };
 		84EAF93F227583BB00DD7E09 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EAF93E227583BB00DD7E09 /* MBProgressHUD.framework */; };
 		84EAF94A2275870500DD7E09 /* qr_code@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EAF9412275870500DD7E09 /* qr_code@2x.png */; };
 		84EAF94B2275870500DD7E09 /* qr_code@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EAF9422275870500DD7E09 /* qr_code@3x.png */; };
@@ -74,6 +75,7 @@
 		84E074932272E68E007D4D98 /* tab_bar_day_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_day_selected@2x.png"; sourceTree = "<group>"; };
 		84E074942272E68E007D4D98 /* tab_bar_me_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_me_selected@3x.png"; sourceTree = "<group>"; };
 		84E074A42272EE53007D4D98 /* Prefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefix.swift; sourceTree = "<group>"; };
+		84E4D7452296964A0016F241 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		84EAF93C22757DD800DD7E09 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EAF93E227583BB00DD7E09 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EAF9412275870500DD7E09 /* qr_code@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_code@2x.png"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				84E074812272E0AF007D4D98 /* DayViewController.swift */,
 				84E074832272E0C6007D4D98 /* NightViewController.swift */,
 				84E074852272E0D4007D4D98 /* MeViewController.swift */,
+				84E4D7452296964A0016F241 /* SettingViewController.swift */,
 				84E074A42272EE53007D4D98 /* Prefix.swift */,
 				848B046B22963DF0002A708E /* view */,
 				84E074872272E649007D4D98 /* Resource */,
@@ -351,6 +354,7 @@
 				84E074862272E0D4007D4D98 /* MeViewController.swift in Sources */,
 				84E074822272E0AF007D4D98 /* DayViewController.swift in Sources */,
 				84E0746C2272A082007D4D98 /* AppDelegate.swift in Sources */,
+				84E4D7462296964A0016F241 /* SettingViewController.swift in Sources */,
 				84E074A52272EE53007D4D98 /* Prefix.swift in Sources */,
 				84E0747E2272A3E7007D4D98 /* BaseTabBarViewController.swift in Sources */,
 				84E074842272E0C6007D4D98 /* NightViewController.swift in Sources */,

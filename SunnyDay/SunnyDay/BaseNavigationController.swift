@@ -20,6 +20,20 @@ class BaseNavigationController: UINavigationController {
 
         //导航栏标题颜色及大小
         navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: CGFloat(kNavgationBarTextSize))]
+
+        //返回按钮
+        navBar.tintColor = UIColor.white
+        navBar.backIndicatorImage = UIImage.init(named: "me_statistical")
+        navBar.backIndicatorTransitionMaskImage = UIImage.init(named: "me_statistical")
+    }
+
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        if self.children.count > 0 {
+            viewController.hidesBottomBarWhenPushed = true
+        }
+        let item = UIBarButtonItem.init(title: "", style: .plain, target: nil, action: nil)
+        viewController.navigationItem.backBarButtonItem = item
+        super .pushViewController(viewController, animated: true)
     }
 
     /*

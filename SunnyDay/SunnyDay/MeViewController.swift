@@ -55,10 +55,15 @@ class MeViewController: UIViewController, UITableViewDataSource, UITableViewDele
         tableView .deselectRow(at: indexPath, animated: true)
 
         print("---------------点击了:\(indexPath.row)")
+
+        if indexPath.row == 2 {
+            let settingVC = SettingViewController()
+            self.navigationController?.pushViewController(settingVC, animated: true)
+        }
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return cellHeight
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

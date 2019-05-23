@@ -19,4 +19,7 @@ let kScreenHeight = UIScreen.main.bounds.height
 let kNavgationBarTextSize = 18
 /** 标签栏字体大小 */
 let kTabBarTextSize = 12
+/** tableView cell高度 */
+let cellHeight: CGFloat = 60
+
 
