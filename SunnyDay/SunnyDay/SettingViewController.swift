@@ -12,10 +12,10 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
     private let cellID = "cellID"
 
     private lazy var tableView: UITableView = {
-        let tableView = UITableView.init(frame: self.view.bounds, style: .grouped)
+        let tableView = UITableView.init(frame: view.bounds, style: .grouped)
         tableView.dataSource = self
         tableView.delegate = self
-        self.view.addSubview(tableView)
+        view.addSubview(tableView)
 
         return tableView
     }()
@@ -39,7 +39,7 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "设置"
+        title = "设置"
 
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
     }

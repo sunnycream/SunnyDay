@@ -31,7 +31,7 @@ class MeCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
-        self .setupUI()
+        setupUI()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -39,17 +39,17 @@ class MeCell: UITableViewCell {
     }
 
     func setupUI() {
-        self.addSubview(self.icon)
-        self.icon.snp.makeConstraints { (make) in
+        addSubview(icon)
+        icon.snp.makeConstraints { (make) in
 //            make.width.height.equalTo(32)
             make.size.equalTo(CGSize(width: 32, height: 32))
             make.left.equalTo(self).offset(20)
             make.centerY.equalTo(self)
         }
 
-        self.addSubview(self.title)
-        self.title.snp.makeConstraints { (make) in
-            make.left.equalTo(self.icon.snp.right).offset(10)
+        addSubview(title)
+        title.snp.makeConstraints { (make) in
+            make.left.equalTo(icon.snp.right).offset(10)
             make.centerY.equalTo(self)
         }
     }
