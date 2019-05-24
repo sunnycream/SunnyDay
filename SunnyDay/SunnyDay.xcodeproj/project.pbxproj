@@ -13,6 +13,9 @@
 		848B047022964627002A708E /* me_statistical@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 848B046E22964627002A708E /* me_statistical@3x.png */; };
 		848B047122964627002A708E /* me_statistical@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 848B046F22964627002A708E /* me_statistical@2x.png */; };
 		84CD8A6622979547007CDEAF /* DNSPageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD8A6522979547007CDEAF /* DNSPageView.framework */; };
+		84CD8A6822979F1D007CDEAF /* LuffyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD8A6722979F1D007CDEAF /* LuffyViewController.swift */; };
+		84CD8A6A22979F28007CDEAF /* ZoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD8A6922979F28007CDEAF /* ZoroViewController.swift */; };
+		84CD8A6C22979F2F007CDEAF /* NamiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD8A6B22979F2F007CDEAF /* NamiViewController.swift */; };
 		84E0746C2272A082007D4D98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0746B2272A082007D4D98 /* AppDelegate.swift */; };
 		84E074712272A082007D4D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E0746F2272A082007D4D98 /* Main.storyboard */; };
 		84E074732272A083007D4D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E074722272A083007D4D98 /* Assets.xcassets */; };
@@ -53,6 +56,9 @@
 		848B046E22964627002A708E /* me_statistical@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_statistical@3x.png"; sourceTree = "<group>"; };
 		848B046F22964627002A708E /* me_statistical@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_statistical@2x.png"; sourceTree = "<group>"; };
 		84CD8A6522979547007CDEAF /* DNSPageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DNSPageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CD8A6722979F1D007CDEAF /* LuffyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuffyViewController.swift; sourceTree = "<group>"; };
+		84CD8A6922979F28007CDEAF /* ZoroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoroViewController.swift; sourceTree = "<group>"; };
+		84CD8A6B22979F2F007CDEAF /* NamiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamiViewController.swift; sourceTree = "<group>"; };
 		84E074682272A082007D4D98 /* SunnyDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnyDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E0746B2272A082007D4D98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E074702272A082007D4D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +141,78 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		84CD8A6D2297A0D4007CDEAF /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				84E074812272E0AF007D4D98 /* DayViewController.swift */,
+				84CD8A6E2297A0DF007CDEAF /* controller */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		84CD8A6E2297A0DF007CDEAF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				84CD8A6722979F1D007CDEAF /* LuffyViewController.swift */,
+				84CD8A6922979F28007CDEAF /* ZoroViewController.swift */,
+				84CD8A6B22979F2F007CDEAF /* NamiViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		84CD8A6F2297A0F8007CDEAF /* Night */ = {
+			isa = PBXGroup;
+			children = (
+				84E074832272E0C6007D4D98 /* NightViewController.swift */,
+				84CD8A702297A101007CDEAF /* controller */,
+			);
+			path = Night;
+			sourceTree = "<group>";
+		};
+		84CD8A702297A101007CDEAF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		84CD8A712297A111007CDEAF /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				84E074852272E0D4007D4D98 /* MeViewController.swift */,
+				84CD8A722297A119007CDEAF /* controller */,
+				848B046B22963DF0002A708E /* view */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		84CD8A722297A119007CDEAF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				84E4D7452296964A0016F241 /* SettingViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		84CD8A732297A12E007CDEAF /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				84E0747D2272A3E7007D4D98 /* BaseTabBarViewController.swift */,
+				84E0747F2272B25E007D4D98 /* BaseNavigationController.swift */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		84CD8A742297A194007CDEAF /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				84CD8A6D2297A0D4007CDEAF /* Day */,
+				84CD8A6F2297A0F8007CDEAF /* Night */,
+				84CD8A712297A111007CDEAF /* Me */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		84E0745F2272A082007D4D98 = {
 			isa = PBXGroup;
 			children = (
@@ -157,14 +235,9 @@
 			isa = PBXGroup;
 			children = (
 				84E0746B2272A082007D4D98 /* AppDelegate.swift */,
-				84E0747D2272A3E7007D4D98 /* BaseTabBarViewController.swift */,
-				84E0747F2272B25E007D4D98 /* BaseNavigationController.swift */,
-				84E074812272E0AF007D4D98 /* DayViewController.swift */,
-				84E074832272E0C6007D4D98 /* NightViewController.swift */,
-				84E074852272E0D4007D4D98 /* MeViewController.swift */,
-				84E4D7452296964A0016F241 /* SettingViewController.swift */,
 				84E074A42272EE53007D4D98 /* Prefix.swift */,
-				848B046B22963DF0002A708E /* view */,
+				84CD8A732297A12E007CDEAF /* BaseController */,
+				84CD8A742297A194007CDEAF /* Module */,
 				84E074872272E649007D4D98 /* Resource */,
 				84E0746F2272A082007D4D98 /* Main.storyboard */,
 				84E074722272A083007D4D98 /* Assets.xcassets */,
@@ -356,14 +429,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E074802272B25E007D4D98 /* BaseNavigationController.swift in Sources */,
+				84CD8A6822979F1D007CDEAF /* LuffyViewController.swift in Sources */,
 				848B046D22963E1D002A708E /* MeCell.swift in Sources */,
 				84E074862272E0D4007D4D98 /* MeViewController.swift in Sources */,
 				84E074822272E0AF007D4D98 /* DayViewController.swift in Sources */,
 				84E0746C2272A082007D4D98 /* AppDelegate.swift in Sources */,
+				84CD8A6A22979F28007CDEAF /* ZoroViewController.swift in Sources */,
 				84E4D7462296964A0016F241 /* SettingViewController.swift in Sources */,
 				84E074A52272EE53007D4D98 /* Prefix.swift in Sources */,
 				84E0747E2272A3E7007D4D98 /* BaseTabBarViewController.swift in Sources */,
 				84E074842272E0C6007D4D98 /* NightViewController.swift in Sources */,
+				84CD8A6C22979F2F007CDEAF /* NamiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
