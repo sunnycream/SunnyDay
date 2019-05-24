@@ -1,19 +1,19 @@
 //
-//  DayViewController.swift
+//  NamiViewController.swift
 //  SunnyDay
 //
-//  Created by admin on 2019/4/26.
+//  Created by admin on 2019/5/24.
 //  Copyright © 2019 admin. All rights reserved.
 //
 
 import UIKit
 
-class DayViewController: UIViewController {
+class NamiViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor.orange
     }
     
 
