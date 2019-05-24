@@ -12,6 +12,7 @@
 		848B046D22963E1D002A708E /* MeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B046C22963E1D002A708E /* MeCell.swift */; };
 		848B047022964627002A708E /* me_statistical@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 848B046E22964627002A708E /* me_statistical@3x.png */; };
 		848B047122964627002A708E /* me_statistical@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 848B046F22964627002A708E /* me_statistical@2x.png */; };
+		84CD8A6622979547007CDEAF /* DNSPageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD8A6522979547007CDEAF /* DNSPageView.framework */; };
 		84E0746C2272A082007D4D98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0746B2272A082007D4D98 /* AppDelegate.swift */; };
 		84E074712272A082007D4D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E0746F2272A082007D4D98 /* Main.storyboard */; };
 		84E074732272A083007D4D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E074722272A083007D4D98 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		848B046C22963E1D002A708E /* MeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeCell.swift; sourceTree = "<group>"; };
 		848B046E22964627002A708E /* me_statistical@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_statistical@3x.png"; sourceTree = "<group>"; };
 		848B046F22964627002A708E /* me_statistical@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_statistical@2x.png"; sourceTree = "<group>"; };
+		84CD8A6522979547007CDEAF /* DNSPageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DNSPageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E074682272A082007D4D98 /* SunnyDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnyDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E0746B2272A082007D4D98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E074702272A082007D4D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CD8A6622979547007CDEAF /* DNSPageView.framework in Frameworks */,
 				848B046A22963DCF002A708E /* SnapKit.framework in Frameworks */,
 				84EAF93F227583BB00DD7E09 /* MBProgressHUD.framework in Frameworks */,
 				50B6A5E5133F0944B0A16E84 /* Pods_SunnyDay.framework in Frameworks */,
@@ -106,6 +109,7 @@
 		4115B05DE7687A1630C7765E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84CD8A6522979547007CDEAF /* DNSPageView.framework */,
 				848B046922963DCF002A708E /* SnapKit.framework */,
 				84EAF93E227583BB00DD7E09 /* MBProgressHUD.framework */,
 				84EAF93C22757DD800DD7E09 /* SnapKit.framework */,
