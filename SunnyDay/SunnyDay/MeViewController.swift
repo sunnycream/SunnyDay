@@ -58,7 +58,7 @@ class MeViewController: UIViewController, UITableViewDataSource, UITableViewDele
 
         if indexPath.row == 2 {
             let settingVC = SettingViewController()
-            self.navigationController?.pushViewController(settingVC, animated: true)
+            navigationController?.pushViewController(settingVC, animated: true)
         }
     }
 

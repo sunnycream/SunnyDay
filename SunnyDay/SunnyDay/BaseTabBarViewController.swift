@@ -13,7 +13,7 @@ class BaseTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.addChildControllers()
+        addChildControllers()
 
         let tabBarItem = UITabBarItem.appearance()
         tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont.init(name: "Marker Felt", size: CGFloat(kTabBarTextSize))!], for: UIControl.State.normal)
@@ -22,11 +22,11 @@ class BaseTabBarViewController: UITabBarController {
     }
 
     func addChildControllers() {
-        self.setChildControllers(viewController: DayViewController(), title: "Day", normalImage: UIImage.init(named: "tab_bar_day_normal")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), selectedImage: UIImage.init(named: "tab_bar_day_selected")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
+        setChildControllers(viewController: DayViewController(), title: "Day", normalImage: UIImage.init(named: "tab_bar_day_normal")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), selectedImage: UIImage.init(named: "tab_bar_day_selected")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
 
-        self.setChildControllers(viewController: NightViewController(), title: "Night", normalImage: UIImage.init(named: "tab_bar_night_normal")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), selectedImage: UIImage.init(named: "tab_bar_night_selected")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
+        setChildControllers(viewController: NightViewController(), title: "Night", normalImage: UIImage.init(named: "tab_bar_night_normal")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), selectedImage: UIImage.init(named: "tab_bar_night_selected")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
 
-        self.setChildControllers(viewController: MeViewController(), title: "Me", normalImage: UIImage.init(named: "tab_bar_me_normal")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), selectedImage: UIImage.init(named: "tab_bar_me_selected")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
+        setChildControllers(viewController: MeViewController(), title: "Me", normalImage: UIImage.init(named: "tab_bar_me_normal")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), selectedImage: UIImage.init(named: "tab_bar_me_selected")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
     }
 
     func setChildControllers(viewController: UIViewController?, title: NSString?, normalImage :UIImage?, selectedImage: UIImage?) {
@@ -38,7 +38,7 @@ class BaseTabBarViewController: UITabBarController {
 
         viewController?.title = title! as String
 
-        self.addChild(nav)
+        addChild(nav)
     }
     
 
